@@ -1,9 +1,7 @@
 /**
  * @name AutoExpandRoles
  * @author b1aids
- * @authorId 756267479214587975
- * @invite https://discord.gg/ddev
- * @version 1.0.0
+ * @version 1.0.2
  * @description Reverts the Role Display back to the Original Discord Look
  */
 
@@ -13,6 +11,22 @@ module.exports = class AutoExpandRoles {
         this.observer = null;
         this.debounceTimeout = null;
         this.clickedButtons = new WeakSet();
+    }
+
+    getName() {
+        return "AutoExpandRoles";
+    }
+
+    getDescription() {
+        return "Reverts the Role Display back to the Original Discord Look";
+    }
+
+    getVersion() {
+        return "1.0.2";
+    }
+
+    getAuthor() {
+        return "b1aids";
     }
 
     start() {
